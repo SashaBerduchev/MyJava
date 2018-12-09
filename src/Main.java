@@ -11,7 +11,9 @@ import Multithreading.Example1.Example3.Chiken;
 import Multithreading.Example1.Example3.Egg;
 import Multithreading.Example1.Synchronize.Program;
 import Serializable.DeSerializable;
+import model.entity.Circle;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class Main {
@@ -109,6 +111,7 @@ public class Main {
          program.ProgramSet();
 
 
+         Point p = new Circle(3, 4, 5);
 
         } catch (IOException e) {
             e.printStackTrace();
