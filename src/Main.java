@@ -12,9 +12,13 @@ import Multithreading.Example1.Example3.Egg;
 import Multithreading.Example1.Synchronize.Program;
 import Serializable.DeSerializable;
 import model.entity.Circle;
+import model.entity.Point;
+import model.entity.PointList;
+import model.entity.PointListSample;
 
 import java.awt.*;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Main {
 
@@ -111,7 +115,15 @@ public class Main {
          program.ProgramSet();
 
 
-         Point p = new Circle(3, 4, 5);
+
+         Point p = new Circle(3, 4, 5){
+          {
+           setX(100500);
+           setY(100500);
+          }
+         };
+         PointListSample pointListSample = new PointListSample();
+         pointListSample.PointSet();
 
         } catch (IOException e) {
             e.printStackTrace();
